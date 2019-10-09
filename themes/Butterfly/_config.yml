@@ -10,11 +10,11 @@ menu:
   Archives: /archives/ || fa fa-archive
   Tags: /tags/ || fa fa-tags
   Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
-  About: /about/ || fa fa-heart
-  List||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  # Link: /link/ || fa fa-link
+  # About: /about/ || fa fa-heart
+  # List||fa fa-list:
+  #   - Music || /music/ || fa fa-music
+  #   - Movie || /movies/ || fa fa-film
 
 
 # Favicon
@@ -131,7 +131,7 @@ cdn:
 # Post info settings
 # ---------------
 # avatar: /img/avatar.png
-avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png
+avatar: http://img.erealmsoft.com/home/logo.png
 
 # the banner image of index
 # if the banner of another page not setting,it will show the top_img

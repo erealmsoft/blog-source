@@ -69,6 +69,8 @@ export default class App extends Component {
     }
 }
 ```
+- 页面上渲染出来的结构为
+![](React高阶组件简单了解/20190925_1.jpg)
 
 - 反向继承
 
@@ -121,3 +123,7 @@ class App extends Component {
 
 export default HOC(App);
 ```
+
+- 查看页面显示结果
+![](React高阶组件简单了解/20190925_2.jpg)
+    - App中可以访问到getIt方法的原因是：在HOC中，`super.render()` super作为对象调用父类方法时，绑定的是子类的this，而getIt方法中之所以能访问到getMe是因为该类继承了App类，所以能使用App的所有属性和方法
