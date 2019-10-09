@@ -56,8 +56,8 @@ copy:
 #   icon: link
 # ---------------
 social:
-  fa fa-github: https://github.com/jerryc127
-  fa fa-rss: /atom.xml
+  fa fa-github: https://github.com/erealmsoft
+  # fa fa-rss: /atom.xml
 
 ####    search    ####
 # Algolia search
@@ -298,7 +298,7 @@ Flink:
 
 # 打賞按鈕
 reward:
-  enable: true
+  enable: false
   QR_code:
     - itemlist:
         img: /img/wechat.jpg
