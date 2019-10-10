@@ -9,7 +9,7 @@ date: 2019-09-13 00:00:00
 
 ### Real DOM
 
-- 文档对象模型（Document Object Model，简称DOM），是W3C组织推荐的处理可扩展标志语言的标准编程接口.在网页上，组织页面（或文档）的对象被组织在一个树形结构中，用来表示文档中对象的标准模型就称为DOM.
+- 文档对象模型（Document Object Model，简称DOM），是W3C组织推荐的处理可扩展标志语言的标准编程接口。在网页上，组织页面（或文档）的对象被组织在一个树形结构中，用来表示文档中对象的标准模型就称为DOM.
 - DOM实际上是以面向对象方式描述的文档模型。DOM定义了表示和修改文档所需的对象、这些对象的行为和属性以及这些对象之间的关系。可以把DOM认为是页面上数据和结构的一个树形表示，不过页面当然可能并不是以这种树的方式具体实现。
 
 ### Virtual DOM
@@ -20,25 +20,25 @@ date: 2019-09-13 00:00:00
 ### 举个栗子
 
 ```javascript
-    {
-        tag: "div",
-        props: {},
-        children: [
-            "Hello World", 
-            {
-                tag: "ul",
-                props: {},
-                children: [{
-                    tag: "li",
-                    props: {
-                        id: 1,
-                        class: "li-1"
-                    },
-                    children: ["第", 1]
-                }]
-            }
-        ]
-    }
+{
+    tag: "div",
+    props: {},
+    children: [
+        "Hello World", 
+        {
+            tag: "ul",
+            props: {},
+            children: [{
+                tag: "li",
+                props: {
+                    id: 1,
+                    class: "li-1"
+                },
+                children: ["第", 1]
+            }]
+        }
+    ]
+}
 ```
 `上边的例子等同于`
 ```html

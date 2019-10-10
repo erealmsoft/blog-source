@@ -17,7 +17,7 @@ cover: >-
         constructor(props) {
             super(props);
         }
-	}
+	  }
     ```
 2. `组件的挂载阶段`: 此阶段分为 `componentWillMount`，`render`，`componentDidMount` 三个时期。
     - `componentWillMount()` 在组件挂载到DOM前调用，且只会被调用一次，在这边调用this.setState不会引起组件重新渲染，也可以把写在这边的内容提前到constructor()中(很少使用)，`依赖于 DOM 节点的初始化应该放在这里,也可以在这里通过网络请求数据， 并且可以在这里添加事件`。

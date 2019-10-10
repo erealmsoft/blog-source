@@ -28,18 +28,18 @@ cover: >-
         1. 经过初始化的state
         2. 改变state的方法
 
-    ```javascript
+    ```
         function Example() {
             // 声明一个新的叫做 “count” 的 state 变量
             const [count, setCount] = useState(0);
 
             return (
-            <div>
-                <p>You clicked {count} times</p>
-                <button onClick={() => setCount(count + 1)}>
-                Click me
-                </button>
-            </div>
+                <div>
+                    <p>You clicked {count} times</p>
+                    <button onClick={() => setCount(count + 1)}>
+                            Click me
+                    </button>
+                </div>
             );
         }
 	```
@@ -50,11 +50,11 @@ cover: >-
 
     ```javascript
         componentDidMount() {
-        document.title = `You clicked ${this.state.count} times`;
+            document.title = `You clicked ${this.state.count} times`;
         }
 
         componentDidUpdate() {
-        document.title = `You clicked ${this.state.count} times`;
+            document.title = `You clicked ${this.state.count} times`;
         }
     ```
     ```javascript

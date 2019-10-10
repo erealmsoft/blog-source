@@ -18,22 +18,22 @@ cover: >-
 
 1. 定义时绑定
     ```javascript
-        // 此语法确保 `handleClick` 内的 `this` 已被绑定。
-        // 注意: 这是 *实验性* 语法。
-        handleClick = () => {
+    // 此语法确保 `handleClick` 内的 `this` 已被绑定。
+    // 注意: 这是 *实验性* 语法。
+    handleClick = () => {
         console.log('this is:', this);
-        }
+    }
     ```
 2. 调用时绑定
-    ```javascript
-        render() {
-            // 此语法确保 `handleClick` 内的 `this` 已被绑定。
-            return (
-                <button onClick={(e) => this.handleClick(e)}>
+    ```
+    render() {
+        // 此语法确保 `handleClick` 内的 `this` 已被绑定。
+        return (
+            <button onClick={(e) => this.handleClick(e)}>
                 Click me
-                </button>
-            );
-        }
+            </button>
+        );
+    }
 	```
 
 ### 推荐阅读

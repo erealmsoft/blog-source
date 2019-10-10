@@ -20,13 +20,13 @@ date: 2019-09-27 00:00:00
 ### 举个栗子
 ```
 class Greeting extends React.Component {
-	render() {
-	    return (
-	      <h1>Hello, {this.props.name}</h1>
-	    );
-	  }
+    render() {
+        return (
+            <h1>Hello, {this.props.name}</h1>
+        );
+    }
 }
 Greeting.propTypes = {
-	name: PropTypes.string
+    name: PropTypes.string
 };
 ```

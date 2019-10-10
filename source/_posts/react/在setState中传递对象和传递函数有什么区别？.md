@@ -23,7 +23,7 @@ cover: >-
 
 ### 举个栗子
 
-```javascript
+```
 class Test extends Component{
 
     state = {

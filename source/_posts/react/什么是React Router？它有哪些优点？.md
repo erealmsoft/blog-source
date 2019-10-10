@@ -24,7 +24,7 @@ date: 2019-09-26 00:00:00
 - [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
 - [NavLink](https://reacttraining.com/react-router/web/api/NavLink)
 - [Route](https://reacttraining.com/react-router/web/api/Route)
-[Redirect](https://reacttraining.com/react-router/web/api/Redirect)
+- [Redirect](https://reacttraining.com/react-router/web/api/Redirect)
 
 ### 推荐阅读
 - [REACT ROUTER](https://reacttraining.com/react-router/)

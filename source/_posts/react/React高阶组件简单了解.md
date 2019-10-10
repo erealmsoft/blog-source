@@ -25,16 +25,16 @@ date: 2019-09-25 00:00:00
 import React, { Component } from 'react'
 
 function HOC(WrapperComponent){
-	return class HOC extends Component {
-		render() {
-			const newProps = { type:'HOC' };
-			return (
-			    <div>
-			        <WrapperComponent {...this.props} {...newProps} />
-			    </div>
-			)
-		}
-	}
+    return class HOC extends Component {
+        render() {
+            const newProps = { type:'HOC' };
+            return (
+                <div>
+                    <WrapperComponent {...this.props} {...newProps} />
+                </div>
+            )
+        }
+    }
 }
 
 export default HOC
@@ -93,7 +93,7 @@ function HOC(WrapperComponent){
     }
 }
 
-export default HOC;
+export default HOC
 ```
 
 ```
@@ -121,7 +121,7 @@ class App extends Component {
     }
 }
 
-export default HOC(App);
+export default HOC(App)
 ```
 
 - 查看页面显示结果

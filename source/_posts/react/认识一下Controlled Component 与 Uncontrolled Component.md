@@ -13,35 +13,35 @@ cover: >-
 
 - React的state为唯一数据源，并且每个state突变都有一个相关的处理函数，这使得修改或验证用户输入变得简单。
 
-``` javascript
+``` 
 class NameForm extends React.Component {
     constructor(props) {
-    super(props);
-    this.state = {value: ''};
+        super(props);
+        this.state = {value: ''};
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
-    this.setState({value: event.target.value});
+        this.setState({value: event.target.value});
     }
 
     handleSubmit(event) {
-    alert('提交的名字: ' + this.state.value);
-    event.preventDefault();
+        alert('提交的名字: ' + this.state.value);
+        event.preventDefault();
     }
 
     render() {
-    return (
-        <form onSubmit={this.handleSubmit}>
-        <label>
-            名字:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="提交" />
-        </form>
-    );
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    名字:
+                    <input type="text" value={this.state.value} onChange={this.handleChange} />
+                </label>
+                <input type="submit" value="提交" />
+            </form>
+        );
     }
 }
 ```
@@ -50,29 +50,29 @@ class NameForm extends React.Component {
 
 - 将真实数据存储在DOM节点中，所以在使用非受控组件时，有时候反而更容易同时集成React和非React代码
 
-``` javascript
+```
 class NameForm extends React.Component {
     constructor(props) {
-    super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.input = React.createRef();
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.input = React.createRef();
     }
 
     handleSubmit(event) {
-    alert('A name was submitted: ' + this.input.current.value);
-    event.preventDefault();
+        alert('A name was submitted: ' + this.input.current.value);
+        event.preventDefault();
     }
 
     render() {
-    return (
-        <form onSubmit={this.handleSubmit}>
-        <label>
-            Name:
-            <input type="text" ref={this.input} />
-        </label>
-        <input type="submit" value="Submit" />
-        </form>
-    );
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    Name:
+                    <input type="text" ref={this.input} />
+                </label>
+                <input type="submit" value="Submit" />
+            </form>
+        );
     }
 }
 ```

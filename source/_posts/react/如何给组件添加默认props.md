@@ -18,7 +18,7 @@ cover: >-
 
 1. 在类中声明静态属性 `static defaultProps` ，这种方法只有浏览器编译以后才会生效。
 
-    ```javascript
+    ```
     static defaultProps = {
         age: 18
     }
@@ -32,13 +32,13 @@ cover: >-
     ```
 
 2. 在类外为类追加 `defaultProps` 属性，这种方式会一直生效。
-    ```javascript
+    ```
     class App extends Component {
-    render() {
-        return (
-            <div>
-                {this.props.name}
-            </div>
+        render() {
+            return (
+                <div>
+                    {this.props.name}
+                </div>
             );
         } 
     }

@@ -20,14 +20,14 @@ cover: >-
 - 使用：
     1. 使用 `React.createRef()` 创建
     2. 将ref属性附加到React元素上
-        ```javascript
+        ```
         class MyComponent extends React.Component {
             constructor(props) {
-            super(props);
-            this.myRef = React.createRef();
+                super(props);
+                this.myRef = React.createRef();
             }
             render() {
-            return <div ref={this.myRef} />;
+                return <div ref={this.myRef} />;
             }
         }
         ```   

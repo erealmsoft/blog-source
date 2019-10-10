@@ -13,10 +13,10 @@ date: 2019-09-11 00:00:00
 
 1. 函数定义的无状态组件
     - 语法：
-        ``` javascript
+        ```
 		function Component(props, /* context */) {
-		          return <div>Hello {props.name}</div>
-		      }
+		    return <div>Hello {props.name}</div>
+		}
 		ReactDOM.render(<Component name="Jack" />, mountNode)
 		```
     - 特点：
@@ -26,43 +26,39 @@ date: 2019-09-11 00:00:00
 
 2. es6形式的React.Component定义的组件
     - 语法：
-        ``` javascript
-		class Component extends React.Component{
-		            constructor(props){
-		                super(props);
-		            }
-		            
-		            handleClick(){
-		                console.log('hello world');
-		            }
-		            
-		            redner(){
-		                return(
-		                    <div onClick={() => {this.handleClick()}}>React Component</div>
-		                )
-		            }
-	     }
-		```
+	```
+    class Component extends React.Component {
+        constructor(props) {
+            super(props);
+        }	
+
+        handleClick() {
+            console.log('hello world');
+        }
+
+        render() {
+            return(
+                <div onClick={() => {this.handleClick()}}>React Component</div>
+            )
+        }
+    }
+	```
     - 特点：
         - 有状态，会被实例化，可以访问组件生命周期
         - 成员函数不会自动绑定this，需要开发者手动绑定，否则this不能获取到当前组件实例对象
 
 3. es5原生方式React.createClass定义组件
     - 语法：
-        ``` javascript
-		var Component = React.createClass({
-		            render: function(){
-		                <div>React Component</div>
-		            }
-		})
+        ``` 
+        var Component = React.createClass({
+            render: function(){
+                <div>React Component</div>
+            }
+        })
 		```
     - 特点：
         - 有状态，会被实例化，可以访问组件生命周期
 		- 会自动绑定this，导致不必要的性能开销
-
-### 它们的区别
-
-
 
 ### 这几种构建方法的区别
 
