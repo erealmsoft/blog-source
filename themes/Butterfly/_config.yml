@@ -76,7 +76,7 @@ algolia_search:
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
 # ---------------
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -290,7 +290,7 @@ qihu_site_verification:
 Flink:
   headline: 友情鏈接
   info_headline: 我的Blog資料
-  name: Blog 名字： eRealm Developers
+  # name: Blog 名字： eRealm Developers
   address: Blog 地址： https://erealmsoft.github.io/
   avatar: Blog 頭像： http://img.erealmsoft.com/home/logo.png
   info: Blog 簡介： 今日事,今日畢

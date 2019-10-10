@@ -4,32 +4,32 @@ class:
     1:
       name: Ken
       link: http://www.dang-jian.com
-      avatar: https://cdn.xxxxx.top/avatar.png
+      avatar: /img/developers/Ken.jpg
     2:
       name: Irene
       link: http://irenedan.com
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Irene.jpg
     3:
       name: Mia
       link: https://zhangmia.com
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Mia.jpg
     4:
       name: Gavin
       link: https://beckqin.com
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Gavin.jpg
     5:
       name: Sage
       link: http://lucky-23.com
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Sage.jpg
     6:
       name: Helen
       link: https://be-awake.github.io
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Helen.jpg
     7:
       name: Jack
       link: https://ct-yang.com
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Jack.jpg
     8:
       name: Ada
       link: https://ada-he.com
-      avatar: https://xxxxx/avatar.png
+      avatar: /img/developers/Ada.jpg
