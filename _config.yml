@@ -88,3 +88,9 @@ deploy:
 auto_category:
  enable: true
  depth:
+
+ # 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml

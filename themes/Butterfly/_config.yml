@@ -10,7 +10,7 @@ menu:
   Archives: /archives/ || fa fa-archive
   Tags: /tags/ || fa fa-tags
   Categories: /categories/ || fa fa-folder-open
-  # Link: /link/ || fa fa-link
+  Link: /link/ || fa fa-link
   # About: /about/ || fa fa-heart
   # List||fa fa-list:
   #   - Music || /music/ || fa fa-music
@@ -290,11 +290,11 @@ qihu_site_verification:
 Flink:
   headline: 友情鏈接
   info_headline: 我的Blog資料
-  name: Blog 名字： JerryC
-  address: Blog 地址： https://jerryc.me/
-  avatar: Blog 頭像： https://jerryc.me/img/avatar.png
+  name: Blog 名字： eRealm Developers
+  address: Blog 地址： https://erealmsoft.github.io/
+  avatar: Blog 頭像： http://img.erealmsoft.com/home/logo.png
   info: Blog 簡介： 今日事,今日畢
-  comment: 如果需要交換友鏈,請留言
+  comment: 
 
 # 打賞按鈕
 reward:
